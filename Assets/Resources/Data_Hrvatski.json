@@ -1,0 +1,226 @@
+{
+  "LanguageId": 1,
+  "LanguageName": "Hrvatski",
+  "Topics": [
+    {
+      "Name": "Bili čiku",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/1",
+              "Name": "1"
+            },
+            {
+              "Path": "Photos/2",
+              "Name": "2"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Hrvatski/Bili čiku.mp3"
+        }
+      ]
+    },
+    {
+      "Name": "Autotune",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/3",
+              "Name": "3"
+            },
+            {
+              "Path": "Photos/4",
+              "Name": "4"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Hrvatski/Autotune.mp3"
+        }
+      ]
+    },
+    {
+      "Name": "DJ Krmak - Armani",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/5",
+              "Name": "5"
+            },
+            {
+              "Path": "Photos/6",
+              "Name": "6"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Hrvatski/DJ Krmak - Armani.mp3"
+        }
+      ]
+    },
+    {
+      "Name": "Vojko kako to",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/7",
+              "Name": "7"
+            },
+            {
+              "Path": "Photos/8",
+              "Name": "8"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Hrvatski/Vojko kako to.mp3"
+        }
+      ]
+    },
+    {
+      "Name": "Imam dečka supermena",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/9",
+              "Name": "9"
+            },
+            {
+              "Path": "Photos/10",
+              "Name": "10"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Hrvatski/Imam dečka supermena.mp3"
+        }
+      ]
+    },
+    {
+      "Name": "Kažu",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/11",
+              "Name": "11"
+            },
+            {
+              "Path": "Photos/12",
+              "Name": "12"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Hrvatski/Kažu.mp3"
+        }
+      ]
+    },
+	{
+      "Name": "Krajisnici - Insomnija",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/13",
+              "Name": "13"
+            },
+            {
+              "Path": "Photos/14",
+              "Name": "14"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Hrvatski/Krajisnici - Insomnija.mp3"
+        }
+      ]
+    },
+	{
+      "Name": "Medo brundo",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/15",
+              "Name": "15"
+            },
+            {
+              "Path": "Photos/16",
+              "Name": "16"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Hrvatski/Medo brundo.mp3"
+        }
+      ]
+    },
+	{
+      "Name": "Mi smo pijane budale",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/17",
+              "Name": "17"
+            },
+            {
+              "Path": "Photos/18",
+              "Name": "18"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Hrvatski/Mi smo pijane budale.mp3"
+        }
+      ]
+    },
+	{
+      "Name": "Miki milane",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/19",
+              "Name": "19"
+            },
+            {
+              "Path": "Photos/20",
+              "Name": "20"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Hrvatski/Miki milane.mp3"
+        }
+      ]
+    }
+  ]
+}

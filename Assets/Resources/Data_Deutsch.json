@@ -1,0 +1,226 @@
+{
+  "LanguageId": 3,
+  "LanguageName": "Deutsch",
+  "Topics": [
+    {
+      "Name": "Berge - Fur die Liebe",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/1",
+              "Name": "1"
+            },
+            {
+              "Path": "Photos/2",
+              "Name": "2"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Deutsch/Berge - Fur die Liebe.mp3"
+        }
+      ]
+    },
+    {
+      "Name": "Clueso - Wenn Du Liebst",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/3",
+              "Name": "3"
+            },
+            {
+              "Path": "Photos/4",
+              "Name": "4"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Deutsch/Clueso - Wenn Du Liebst.mp3"
+        }
+      ]
+    },
+    {
+      "Name": "Ich weiss wer ich bin",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/5",
+              "Name": "5"
+            },
+            {
+              "Path": "Photos/6",
+              "Name": "6"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Deutsch/Ich weiss wer ich bin.mp3"
+        }
+      ]
+    },
+    {
+      "Name": "Immer wenn wir uns sehn",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/7",
+              "Name": "7"
+            },
+            {
+              "Path": "Photos/8",
+              "Name": "8"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Deutsch/Immer wenn wir uns sehn.mp3"
+        }
+      ]
+    },
+    {
+      "Name": "Mark Forster - Bauch und Kopf",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/9",
+              "Name": "9"
+            },
+            {
+              "Path": "Photos/10",
+              "Name": "10"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Deutsch/Mark Forster - Bauch und Kopf.mp3"
+        }
+      ]
+    },
+    {
+      "Name": "Mark Forster - Einer dieser Steine",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/11",
+              "Name": "11"
+            },
+            {
+              "Path": "Photos/12",
+              "Name": "12"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Deutsch/Mark Forster - Einer dieser Steine.mp3"
+        }
+      ]
+    },
+	{
+      "Name": "Schau mich nicht so an",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/13",
+              "Name": "13"
+            },
+            {
+              "Path": "Photos/14",
+              "Name": "14"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Deutsch/Schau mich nicht so an.mp3"
+        }
+      ]
+    },
+	{
+      "Name": "MERO Baller los",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/15",
+              "Name": "15"
+            },
+            {
+              "Path": "Photos/16",
+              "Name": "16"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Deutsch/MERO Baller los.mp3"
+        }
+      ]
+    },
+	{
+      "Name": "Miami yacine kokaina",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/17",
+              "Name": "17"
+            },
+            {
+              "Path": "Photos/18",
+              "Name": "18"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Deutsch/Miami yacine kokaina.mp3"
+        }
+      ]
+    },
+	{
+      "Name": "Namika - Lieblingsmensch",
+      "Media": [
+        {
+          "Name": "Gallery",
+          "Photos": [
+            {
+              "Path": "Photos/19",
+              "Name": "19"
+            },
+            {
+              "Path": "Photos/20",
+              "Name": "20"
+            }
+          ]
+        },
+        {
+          "Name": "Audio",
+          "FilePath": "audio/Deutsch/Namika - Lieblingsmensch.mp3"
+        }
+      ]
+    }
+  ]
+}

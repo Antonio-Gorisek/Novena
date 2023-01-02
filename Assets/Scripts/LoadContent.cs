@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LoadContent : MonoBehaviour
 {
@@ -11,13 +12,45 @@ public class LoadContent : MonoBehaviour
     // =================================================================
 
     IEnumerator StartLoading() {
-        while (_index <= 100) {
+        while (_index < JsonManager.instance.GetTopicLenght()) {
 
             yield return new WaitForSeconds(0.1f);
-            Transform go = Instantiate(_contentPrefab, Vector3.zero, Quaternion.identity);
-            go.parent = _contentParent.transform;
+            Transform trans = Instantiate(_contentPrefab, Vector3.zero, Quaternion.identity);
+            trans.transform.SetParent(_contentParent.gameObject.transform);
+            SetTopicData(trans);
             _index++;
+
+            SetButtonListener(trans);
         }
+    }
+
+    // =================================================================
+
+    void SetTopicData(Transform trans)
+    {
+        List<string> mediaData = JsonManager.instance.GetTopicNames();
+        Transform _textChild = trans.GetChild(0);
+        _textChild.GetComponent<TextMeshProUGUI>().text = mediaData[_index];
+
+        int value = _index + 1;
+        GameObject _numberChild = trans.GetChild(1).GetChild(0).gameObject;
+        _numberChild.GetComponent<TextMeshProUGUI>().text = value.ToString();
+    }
+
+    // =================================================================
+
+    void SetButtonListener(Transform trans)
+    {
+        Button button = trans.GetComponent<Button>();
+        button.onClick.AddListener(() =>
+        {
+            if (go == null) { go = GameObject.FindGameObjectWithTag("PlayPage"); }
+            go.GetComponent<Animator>().SetBool("Page", true);
+
+            PlayPageData.instance.SetData(
+                trans.GetChild(0).GetComponent<TextMeshProUGUI>().text, 
+                trans.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text);
+        });
     }
 
     // =================================================================
@@ -50,6 +83,8 @@ public class LoadContent : MonoBehaviour
 
     private Coroutine _loadInstance;
     private List<GameObject> _children;
-    public static LoadContent instance;
+    private GameObject go;
     private int _index = 0;
+
+    public static LoadContent instance;
 }
