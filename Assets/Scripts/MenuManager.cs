@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
+    void Start() => Application.targetFrameRate = 300;
+
     public void btn_Language()
     {
         _listPage.SetBool("Page", true);
