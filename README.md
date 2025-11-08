@@ -1,6 +1,6 @@
 # Novena
 
-**Novena** je testni zadatak napravljen prije nekoliko godina za privremeni posao. Projekt je izrađen u vrlo kratkom roku (2 dana) i predstavlja osnovnu implementaciju audio playera i prikaza medijskih sadržaja.  
+**Novena** is a test task made a few years ago for a temporary job. The project was created in a very short time (2 days) and represents the basic implementation of the audio player and display of media content.
 <p align="center" style="display:flex; gap:2px; justify-content:center;">
   <img src="https://github.com/user-attachments/assets/507f4696-f045-4568-9eaa-aec3abb6f7e2" width="33%" />
   <img src="https://github.com/user-attachments/assets/1e7c830e-ac4f-474d-a521-a4632929d1b3" width="32%" />
@@ -8,22 +8,21 @@
 </p>
 
 
-## Opis projekta
+## Project description
 
-- Reproducira audio zapise koji su definirani u JSON datotekama.
-- Prikazuje slike povezane s temama iz JSON-a i automatski ih prebacuje.
-- Sadrži jednostavan dizajn i osnovne UI funkcionalnosti.
-- Svi elementi (audio, slike i tekstovi) učitavaju se preko Unity `Resources` foldera i json filea.
+- Plays audio tracks that are defined in JSON files.
+- Displays images related to topics from JSON and switches them automatically.
+- Contains a simple design and basic UI functionality.
+- All elements (audio, images and texts) are loaded via Unity `Resources` folder and json file.
 
-## Struktura projekta
+## Project scripts
 
-- **Scripts**
-  - `JsonManager.cs` – učitava podatke iz JSON datoteka i pruža metode za dohvat tema, medija i audio datoteka.
-  - `AudioManager.cs` – kontrolira reprodukciju audio zapisa, UI slider i play/pause funkcionalnost.
-  - `PlayPageData.cs` – prikazuje naslov i broj stranice, te rotira slike povezane s odabranom temom.
-  - `LoadContent.cs` – dinamički stvara UI elemente za sve teme i dodaje listener-e na tipke.
-  - `MenuManager.cs` – kontrolira navigaciju između glavne liste i stranice za prikaz sadržaja.
+- `JsonManager.cs` – loads data from JSON files and provides methods for retrieving topics, media and audio files. 
+- `AudioManager.cs` – controls audio playback, UI slider and play/pause functionality. 
+- `PlayPageData.cs` – displays the title and page number, and changes images related to the selected topic. 
+- `LoadContent.cs` – dynamically creates UI elements for all themes and adds listeners to buttons.
+- `MenuManager.cs` – controls the navigation between the main list and the content display page.
 
-## Napomena
+## Note
 
-Projekt je napravljen minimalno, isključivo za demonstraciju osnovnih funkcionalnosti. Dizajn i interakcije su jednostavni kao i kod.
+The project was made minimally, exclusively for the demonstration of basic functionalities. The design and interactions are as simple as the code.
