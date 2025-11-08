@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
-    void Start() => Application.targetFrameRate = 300;
+    [SerializeField] private Animator _listPage;
+    [SerializeField] private Animator _playPage;
 
     public void btn_Language()
     {
@@ -10,12 +11,14 @@ public class MenuManager : MonoBehaviour
         LoadContent.instance.LoadData();
     }
 
-    public void btn_Back(int value)
-    {
-        if (value == 0) { _listPage.SetBool("Page", false); }
-        if (value == 1) { _playPage.SetBool("Page", false); }
+    public void btn_Back(int value) {
+        switch (value) {
+            case 0:
+                _listPage.SetBool("Page", false);
+                break;
+            case 1:
+                _playPage.SetBool("Page", false);
+                break;
+        }
     }
-
-    [SerializeField] Animator _listPage;
-    [SerializeField] Animator _playPage;
 }

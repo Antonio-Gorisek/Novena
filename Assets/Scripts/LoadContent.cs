@@ -6,10 +6,19 @@ using UnityEngine.UI;
 
 public class LoadContent : MonoBehaviour
 {
+    [SerializeField] private Transform _contentPrefab;
+    [SerializeField] private GameObject _contentParent;
+    [SerializeField] private GameObject _parent;
+
+    private Coroutine _loadInstance;
+    private List<GameObject> _children;
+    private GameObject go;
+    private int _index = 0;
+
+    public static LoadContent instance;
+
     private void Awake() => instance = this;
     public void LoadData() => _loadInstance = StartCoroutine(StartLoading());
-
-    // =================================================================
 
     IEnumerator StartLoading() {
         while (_index < JsonManager.instance.GetTopicLenght()) {
@@ -24,8 +33,6 @@ public class LoadContent : MonoBehaviour
         }
     }
 
-    // =================================================================
-
     void SetTopicData(Transform trans)
     {
         List<string> mediaData = JsonManager.instance.GetTopicNames();
@@ -36,8 +43,6 @@ public class LoadContent : MonoBehaviour
         GameObject _numberChild = trans.GetChild(1).GetChild(0).gameObject;
         _numberChild.GetComponent<TextMeshProUGUI>().text = value.ToString();
     }
-
-    // =================================================================
 
     void SetButtonListener(Transform trans)
     {
@@ -53,8 +58,6 @@ public class LoadContent : MonoBehaviour
         });
     }
 
-    // =================================================================
-
     public void DestroyData()  {
         _index = 0;
         StopCoroutine(_loadInstance);
@@ -63,7 +66,6 @@ public class LoadContent : MonoBehaviour
         _children.Clear();
     }
 
-    // =================================================================
     List<GameObject> GetAllChildren(GameObject obj) {
         List<GameObject> children = new List<GameObject>();
 
@@ -73,18 +75,4 @@ public class LoadContent : MonoBehaviour
         }
         return children;
     }
-
-    // =================================================================
-
-
-    [SerializeField] Transform _contentPrefab;
-    [SerializeField] GameObject _contentParent;
-    [SerializeField] GameObject _parent;
-
-    private Coroutine _loadInstance;
-    private List<GameObject> _children;
-    private GameObject go;
-    private int _index = 0;
-
-    public static LoadContent instance;
 }

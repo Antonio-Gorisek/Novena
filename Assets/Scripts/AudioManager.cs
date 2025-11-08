@@ -3,14 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System.IO;
 
 public class AudioManager : MonoBehaviour
 {
 
-    private void Awake() => instance = this;
+    [SerializeField] private Slider _slider;
+    [SerializeField] private TextMeshProUGUI _textTime;
+    [SerializeField] private Image playPauseButton;
+    [SerializeField] private Sprite playSprite;
+    [SerializeField] private Sprite pauseSprite;
 
-    // ==================================================================================
+    public static AudioManager instance;
+
+    private AudioSource _audioSource;
+    private AudioClip _audioClip;
+    private Coroutine corutine;
+
+
+    private bool isPlaying;
+
+    private void Awake() => instance = this;
 
     public void SelectAudio(string data)
     {
@@ -34,8 +46,6 @@ public class AudioManager : MonoBehaviour
         });
     }
 
-    // ==================================================================================
-
     private void ResetAudio(string data)
     {
         List<string> mediaData = JsonManager.instance.GetAudioData(data);
@@ -48,8 +58,6 @@ public class AudioManager : MonoBehaviour
         _slider.maxValue = Mathf.Round(_audioClip.length);
     }
 
-    // ==================================================================================
-
     string FormatTime(float time)
     {
         int Audiominutes = Mathf.FloorToInt(_audioSource.time / 60);
@@ -59,8 +67,6 @@ public class AudioManager : MonoBehaviour
         int seconds = (int)time % 60;
         return string.Format("{0:00}:{1:00} / {2:00}:{3:00}", Audiominutes, Audioseconds, minutes, seconds);
     }
-
-    // ==================================================================================
 
     public void TogglePlayPause()
     {
@@ -80,8 +86,6 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // ==================================================================================
-
     IEnumerator FillSliderAndTime()
     {
         while (_slider.value < _slider.maxValue)
@@ -93,20 +97,4 @@ public class AudioManager : MonoBehaviour
             yield return new WaitForSeconds(1f);
         }
     }
-
-    // ==================================================================================
-
-    public Slider _slider;
-    public TextMeshProUGUI _textTime;
-    public static AudioManager instance;
-
-    private AudioSource _audioSource;
-    private AudioClip _audioClip;
-    private Coroutine corutine;
-
-    public Image playPauseButton;
-    public Sprite playSprite;
-    public Sprite pauseSprite;
-
-    private bool isPlaying;
 }

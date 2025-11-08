@@ -4,32 +4,29 @@ using UnityEngine;
 using TMPro;
 using System;
 using UnityEngine.UI;
-using System.Reflection;
-using System.Linq;
-using Unity.Collections;
 
 public class PlayPageData : MonoBehaviour
 {
+    private List<Sprite> _sprites = new List<Sprite>();
+    public Image _imgDataBox;
+    public TextMeshProUGUI _txtDataNumber;
+    public TextMeshProUGUI _txtDataTitle;
+    public static PlayPageData instance;
+    private Coroutine coruntine;
 
     private void Awake() => instance = this;
-
-    // =======================================================================================
 
     public void SetData(string title, string number)
     {
         _txtDataNumber.text = number;
-        _pageNumber = Int32.Parse(number);
 
         if (coruntine != null) { StopCoroutine(coruntine); }
         _txtDataTitle.text = title;
-        _pageTitle = title;
 
         coruntine = StartCoroutine(ChangeImage());
 
         AudioManager.instance.SelectAudio(title);
     }
-
-    // =======================================================================================
 
     IEnumerator ChangeImage()
     {
@@ -47,7 +44,6 @@ public class PlayPageData : MonoBehaviour
         }
     }
 
-    // =======================================================================================
     private void LoadAllSprites()
     {
         List<string> mediaData = JsonManager.instance.GetMediaData(_txtDataTitle.text);
@@ -58,18 +54,4 @@ public class PlayPageData : MonoBehaviour
             _sprites.Add(sprite);
         }
     }
-
-    // =======================================================================================
-
-
-    public List<Sprite> _sprites = new List<Sprite>();
-    public Image _imgDataBox;
-    public TextMeshProUGUI _txtDataNumber;
-    public TextMeshProUGUI _txtDataTitle;
-    public static PlayPageData instance;
-
-    public int _pageNumber;
-    public string _pageTitle;
-
-    Coroutine coruntine;
 }
